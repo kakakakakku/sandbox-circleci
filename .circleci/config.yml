@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+  sleep:
+    docker:
+      - image: alpine:3.7
+    steps:
+      - run: date
+      - run: sleep 30
+      - run: date
+
+workflows:
+  version: 2
+  sandbox:
+    jobs:
+      - sleep
