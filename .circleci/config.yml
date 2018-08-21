@@ -6,7 +6,7 @@ jobs:
       - image: alpine:3.7
     steps:
       - run: date
-      - run: sleep 30
+      - run: sleep 100
       - run: date
 
 workflows:
